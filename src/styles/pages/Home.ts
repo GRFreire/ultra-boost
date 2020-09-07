@@ -29,8 +29,8 @@ export const Section = styled.section<ISectionProps>`
   justify-content: space-between;
   align-items: center;
 
-  margin: 20px 200px 4vh 200px;
-  padding: 10px 75px;
+  margin: 2vh 200px 9.2vh 200px;
+  padding: 100px 75px;
 
   border-radius: 30px;
 
