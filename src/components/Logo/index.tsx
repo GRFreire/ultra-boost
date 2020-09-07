@@ -4,15 +4,10 @@ import { Title } from './styles'
 
 interface IProps {
   size?: number
-  dark?: boolean
 }
 
-const Logo: React.FC<IProps> = ({ size, dark }) => {
-  return (
-    <Title size={size || 28} dark={dark}>
-      boost
-    </Title>
-  )
+const Logo: React.FC<IProps> = ({ size }) => {
+  return <Title size={size || 28}>boost</Title>
 }
 
 export default Logo

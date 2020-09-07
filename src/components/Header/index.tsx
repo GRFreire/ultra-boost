@@ -10,7 +10,7 @@ interface IProps {
 const Header: React.FC<IProps> = ({ dark }) => {
   return (
     <Container dark={dark}>
-      <Logo size={20} dark={dark} />
+      <Logo size={28} />
       <nav>
         <ul>
           <li>

@@ -8,12 +8,8 @@ export const Container = styled.div<IContainerProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 
-  width: 90%;
-  max-width: 980px;
-
-  margin: 0 auto;
+  margin: 0 200px 0 200px;
   margin-top: 15px;
 
   background-color: ${props =>
