@@ -24,14 +24,15 @@ export const Section = styled.section<ISectionProps>`
     props.dark ? props.theme.dark.text : props.theme.light.primary};
   font-size: 2rem;
 
-  width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  padding: 75px 200px 9.2vh 200px;
+  margin: 20px 200px 4vh 200px;
+  padding: 10px 75px;
+
+  border-radius: 30px;
 
   .left {
     margin-right: 5%;
