@@ -101,3 +101,74 @@ export const Section = styled.section<ISectionProps>`
     width: 500px;
   }
 `
+
+export const Contact = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 9.2vh 200px 4vh 200px;
+  padding: 10px 75px;
+
+  .left h1 {
+    font-family: 'Russo One';
+    font-size: 4rem;
+  }
+`
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px 125px 50px 125px;
+  width: 700px;
+  height: 700px;
+
+  border-radius: 350px;
+
+  background-color: ${props => props.theme.dark.background};
+
+  label {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  input {
+    background-color: transparent;
+    margin-top: 8px;
+    border: 2px solid ${props => props.theme.dark.primary};
+    border-radius: 4px;
+    height: 40px;
+  }
+
+  textarea {
+    background-color: transparent;
+    margin-top: 8px;
+    border: 2px solid ${props => props.theme.dark.primary};
+    border-radius: 4px;
+    height: 160px;
+    resize: none;
+  }
+
+  button {
+    width: 150px;
+    height: 45px;
+
+    background-color: ${props => props.theme.light.primary};
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-weight: 600;
+    cursor: pointer;
+
+    color: ${props => props.theme.dark.text};
+
+    margin-top: 30px;
+
+    align-self: center;
+  }
+`

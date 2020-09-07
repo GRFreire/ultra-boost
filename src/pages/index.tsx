@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Shoes from '../assets/shoes.png'
 import Shoe from '../assets/shoe.png'
 
-import { Container, Section } from '../styles/pages/Home'
+import { Container, Section, Contact, Form } from '../styles/pages/Home'
 import Header from '../components/Header'
 
 const Home: React.FC = () => {
@@ -52,6 +52,26 @@ const Home: React.FC = () => {
           <img src={Shoe} alt="Shoes image" />
         </div>
       </Section>
+
+      <Contact id="contact">
+        <div className="left">
+          <h1>Contact Us</h1>
+        </div>
+        <div className="right">
+          <Form>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="Name" id="name" />
+
+            <label htmlFor="email">Email</label>
+            <input type="text" name="Email" id="email" />
+
+            <label htmlFor="message">Message</label>
+            <textarea name="Message" id="message" />
+
+            <button type="submit">Submit</button>
+          </Form>
+        </div>
+      </Contact>
     </Container>
   )
 }
