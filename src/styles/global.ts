@@ -8,7 +8,7 @@ export default createGlobalStyle`
   }
 
   html {
-    scroll-behavior:smooth
+    scroll-behavior: smooth;
   }
 
   body {
