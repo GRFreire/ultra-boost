@@ -19,6 +19,9 @@ const Header: React.FC<IProps> = ({ dark }) => {
           <li>
             <a href="#about">About</a>
           </li>
+          <li>
+            <a href="#contact">Contact us</a>
+          </li>
         </ul>
       </nav>
     </Container>
