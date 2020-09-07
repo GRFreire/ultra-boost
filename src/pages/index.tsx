@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import Shoes from '../assets/shoes.png'
 
-import { Container, Home as HomeContainer } from '../styles/pages/Home'
+import { Container, Section } from '../styles/pages/Home'
 import Header from '../components/Header'
 
 const Home: React.FC = () => {
@@ -12,10 +12,8 @@ const Home: React.FC = () => {
       <Head>
         <title>Ultra Boost</title>
       </Head>
-
       <Header />
-
-      <HomeContainer>
+      <Section>
         <div className="left">
           <h1>Run Faster</h1>
           <h2>Made for high speed running</h2>
@@ -32,7 +30,27 @@ const Home: React.FC = () => {
         <div className="right">
           <img src={Shoes} alt="Shoes image" />
         </div>
-      </HomeContainer>
+      </Section>
+
+      <Section id="shoe" dark>
+        <div className="left">
+          <h1>Air Boost</h1>
+          <h2>Designed for maximum speed</h2>
+          <h3>
+            With a soft and lightweight finish to give you the
+            <br /> extra boost of speed
+          </h3>
+
+          <div className="buttons">
+            <div className="main">
+              <a href="#">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div className="right">
+          <img src={Shoes} alt="Shoes image" />
+        </div>
+      </Section>
     </Container>
   )
 }

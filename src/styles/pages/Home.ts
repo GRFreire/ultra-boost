@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   display: flex;
@@ -12,17 +12,26 @@ export const Container = styled.div`
     color: ${props => props.theme.light.primary};
   }
 `
-export const Home = styled.div`
-  background-color: ${props => props.theme.light.background};
-  color: ${props => props.theme.light.primary};
+
+interface ISectionProps {
+  dark?: boolean
+}
+
+export const Section = styled.section<ISectionProps>`
+  background-color: ${props =>
+    props.dark ? props.theme.dark.background : props.theme.light.background};
+  color: ${props =>
+    props.dark ? props.theme.dark.text : props.theme.light.primary};
   font-size: 2rem;
+
+  width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  margin: 75px 200px 9vh 200px;
+  padding: 75px 200px 9.2vh 200px;
 
   .left {
     margin-right: 5%;
@@ -36,6 +45,12 @@ export const Home = styled.div`
     h2 {
       font-size: 3rem;
       margin-top: 30px;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-top: 25px;
+      font-family: 'Roboto';
+      font-weight: 600px;
     }
 
     .buttons {
