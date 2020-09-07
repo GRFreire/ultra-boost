@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Shoes from '../assets/shoes.png'
+import Shoe from '../assets/shoe.png'
 
 import { Container, Section } from '../styles/pages/Home'
 import Header from '../components/Header'
@@ -48,7 +49,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="right">
-          <img src={Shoes} alt="Shoes image" />
+          <img src={Shoe} alt="Shoes image" />
         </div>
       </Section>
     </Container>
