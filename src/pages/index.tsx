@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FormEvent } from 'react'
 import Head from 'next/head'
 
 import Shoes from '../assets/shoes.png'
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
           <h1>Contact Us</h1>
         </div>
         <div className="right">
-          <Form>
+          <Form onSubmit={(e: FormEvent) => e.preventDefault()}>
             <label htmlFor="name">Name</label>
             <input type="text" name="Name" id="name" />
 

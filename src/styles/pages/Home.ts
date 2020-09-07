@@ -245,6 +245,9 @@ export const Form = styled.form`
     border: 2px solid ${props => props.theme.dark.primary};
     border-radius: 4px;
     height: 40px;
+    color: ${props => props.theme.dark.text};
+    font: 'Roboto';
+    padding-left: 10px;
   }
 
   textarea {
@@ -254,6 +257,10 @@ export const Form = styled.form`
     border-radius: 4px;
     height: 160px;
     resize: none;
+    color: ${props => props.theme.dark.text};
+    font: 'Roboto';
+    padding-left: 10px;
+    padding-top: 10px;
   }
 
   button {
