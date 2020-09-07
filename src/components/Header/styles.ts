@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const Separator = styled.div`
+  display: flex;
+  height: 80px;
+`
+
 interface IContainerProps {
   dark?: boolean
 }
@@ -8,9 +13,14 @@ export const Container = styled.div<IContainerProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 
-  margin: 0 200px 0 200px;
-  margin-top: 15px;
+  position: fixed;
+  left: 200px;
+  right: 200px;
+  top: 0px;
+
+  padding-top: 15px;
 
   background-color: ${props =>
     props.dark ? props.theme.dark.background : props.theme.light.background};

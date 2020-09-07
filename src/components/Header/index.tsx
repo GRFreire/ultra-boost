@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Container, Separator } from './styles'
 import Logo from '../Logo'
 
 interface IProps {
@@ -9,22 +9,25 @@ interface IProps {
 
 const Header: React.FC<IProps> = ({ dark }) => {
   return (
-    <Container dark={dark}>
-      <Logo size={28} />
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#shoe">Shoe</a>
-          </li>
-          <li>
-            <a href="#contact">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-    </Container>
+    <>
+      <Container dark={dark}>
+        <Logo size={28} />
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#shoe">Shoe</a>
+            </li>
+            <li>
+              <a href="#contact">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </Container>
+      <Separator>.</Separator>
+    </>
   )
 }
 
