@@ -44,7 +44,7 @@ const Home: React.FC = () => {
 
           <div className="buttons">
             <div className="main">
-              <a href="#">Buy</a>
+              <a href="#contact">Buy</a>
             </div>
           </div>
         </div>
