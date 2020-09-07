@@ -17,7 +17,7 @@ const Header: React.FC<IProps> = ({ dark }) => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">Shoe</a>
+            <a href="#shoe">Shoe</a>
           </li>
           <li>
             <a href="#contact">Contact us</a>
