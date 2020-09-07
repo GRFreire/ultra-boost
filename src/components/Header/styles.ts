@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const Separator = styled.div`
   display: flex;
   height: 80px;
+
+  @media (max-width: 878px) {
+    display: none;
+    height: 0;
+  }
 `
 
 interface IContainerProps {
@@ -46,6 +51,26 @@ export const Container = styled.div<IContainerProps>`
           background: rgba(255, 255, 255, 0.15);
         }
       }
+    }
+  }
+
+  @media (max-width: 878px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    left: 0;
+    right: 0;
+    top: 0;
+
+    overflow: visible;
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    nav {
+      display: none;
     }
   }
 `

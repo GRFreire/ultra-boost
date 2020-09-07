@@ -38,8 +38,8 @@ const Home: React.FC = () => {
           <h1>Air Boost</h1>
           <h2>Designed for maximum speed</h2>
           <h3>
-            With a soft and lightweight finish to give you the
-            <br /> extra boost of speed
+            With a soft and lightweight finish to give you the extra boost of
+            speed
           </h3>
 
           <div className="buttons">
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="right">
-          <img src={Shoe} alt="Shoes image" />
+          <img src={Shoe} alt="Shoes image" className="keep-small" />
         </div>
       </Section>
 

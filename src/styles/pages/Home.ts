@@ -29,10 +29,79 @@ export const Section = styled.section<ISectionProps>`
   justify-content: space-between;
   align-items: center;
 
-  margin: 2vh 200px 9.2vh 200px;
+  margin: 2vh 205px 9.2vh 205px;
   padding: 100px 75px;
 
   border-radius: 30px;
+
+  @media (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 75px 75px 0;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right img {
+      display: none;
+
+      &.keep-small {
+        display: block;
+        height: 50%;
+        object-fit: cover;
+        margin-top: 50px;
+        margin-bottom: -200px;
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    h3 {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  @media (max-width: 956px) {
+    h1 {
+      font-size: 3.4rem !important;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+    }
+
+    .right img.keep-small {
+      display: block;
+      height: 60%;
+      object-fit: contain;
+      margin-bottom: -350px;
+    }
+  }
+
+  @media (max-width: 845px) {
+    margin: 1vh 5vw 9.2vh 5vw;
+    padding: 100px 75px;
+    padding-bottom: 40px;
+
+    .right img.keep-small {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.4rem !important;
+    }
+
+    h2 {
+      font-size: 1.4rem !important;
+    }
+  }
 
   .left {
     margin-right: 5%;
@@ -58,6 +127,10 @@ export const Section = styled.section<ISectionProps>`
       margin-top: 50px;
       display: flex;
       flex-direction: row;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
 
       div {
         width: 200px;
@@ -113,6 +186,32 @@ export const Contact = styled.div`
   .left h1 {
     font-family: 'Russo One';
     font-size: 4rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1640px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 920px) {
+    h1 {
+      font-size: 3.2rem !important;
+    }
+  }
+
+  @media (max-width: 832px) {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+  }
+
+  @media (max-width: 570px) {
+    margin: 9.2vh 0 0 0;
+    width: 100%;
+    padding-bottom: 0;
   }
 `
 
@@ -127,6 +226,12 @@ export const Form = styled.form`
   border-radius: 350px;
 
   background-color: ${props => props.theme.dark.background};
+
+  @media (max-width: 1640px) {
+    border-radius: 15px;
+    width: 75vw;
+    height: 700px;
+  }
 
   label {
     margin-top: 30px;
@@ -169,5 +274,16 @@ export const Form = styled.form`
     margin-top: 30px;
 
     align-self: center;
+  }
+
+  @media (max-width: 570px) {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0 20px 30px 20px;
+    width: 100vw;
+    height: auto;
+    border-radius: 0px;
   }
 `
