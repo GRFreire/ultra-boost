@@ -71,7 +71,6 @@ export const Section = styled.section<ISectionProps>`
         font-size: 1.4rem;
         font-family: 'Roboto';
         font-weight: 600;
-        cursor: pointer;
 
         display: flex;
         justify-content: center;
