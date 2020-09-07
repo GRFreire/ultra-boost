@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         <title>Ultra Boost</title>
       </Head>
       <Header />
-      <Section>
+      <Section id="home">
         <div className="left">
           <h1>Run Faster</h1>
           <h2>Made for high speed running</h2>
