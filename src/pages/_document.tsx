@@ -48,6 +48,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap"
+            rel="stylesheet"
+          />
+
           {/* <link rel="icon" href="" /> */}
         </Head>
         <body>
