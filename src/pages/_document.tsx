@@ -54,6 +54,13 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <meta name="author" content="GRFreire" />
+          <meta
+            name="description"
+            content="This website is a fictional tennis landing page. The objective of the project was to know and test web development concepts such as SEO, responsiveness and accessibility for mobile devices."
+          />
+          <meta name="keywords" content="SHOE, SNEAKERS, ULTRA, BOOST" />
+
           {/* <link rel="icon" href="" /> */}
         </Head>
         <body>
